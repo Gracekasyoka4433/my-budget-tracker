@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,31 +10,113 @@
 
 <body>
 
-    <section class="budgeting-tips">
+```
+<!-- Page Heading -->
+<h1>My Budget Tracker</h1>
 
-        <h2>Budgeting Tips</h2>
+<!-- Add Expense Form -->
+<form>
+    <h2>Add Expense</h2>
 
-        <img 
-            class="budget-icon"
-            src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
-            alt="Budgeting and money icon"
-        >
+    <label for="expense-name">Expense Name:</label>
+    <input 
+        type="text" 
+        id="expense-name" 
+        name="expense-name"
+        placeholder="Enter expense name"
+    >
 
-        <p>
-            Learn simple and practical ways to manage your money,
-            control your spending, and build better financial habits.
-        </p>
+    <label for="amount">Amount:</label>
+    <input 
+        type="number" 
+        id="amount" 
+        name="amount"
+        placeholder="Enter amount"
+    >
 
-        <div class="video-container">
-            <iframe
-                src="https://www.youtube.com/embed/-xdDTCQObGo"
-                title="Budgeting Tips"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
+    <label for="category">Category:</label>
+    <select id="category" name="category">
+        <option value="">Select category</option>
+        <option value="food">Food</option>
+        <option value="transport">Transport</option>
+        <option value="school">School</option>
+        <option value="shopping">Shopping</option>
+        <option value="other">Other</option>
+    </select>
 
-    </section>
+    <button type="submit">Add Expense</button>
+</form>
+
+<!-- Expense Table -->
+<table>
+    <thead>
+        <tr>
+            <th>Expense Name</th>
+            <th>Amount</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Bus Fair</td>
+            <td>KSh 100</td>
+            <td>Transport</td>
+        </tr>
+
+        <tr>
+            <td>Lunch</td>
+            <td>KSh 250</td>
+            <td>Food</td>
+        </tr>
+
+        <tr>
+            <td>School Books</td>
+            <td>KSh 500</td>
+            <td>School</td>
+        </tr>
+
+        <tr>
+            <td>Shopping</td>
+            <td>KSh 800</td>
+            <td>Shopping</td>
+        </tr>
+
+        <tr>
+            <td>Mobile Data</td>
+            <td>KSh 200</td>
+            <td>Other</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Budgeting Tips -->
+<section class="budgeting-tips">
+
+    <h2>Budgeting Tips</h2>
+
+    <img 
+        class="budget-icon"
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
+        alt="Budgeting and money icon"
+    >
+
+    <p>
+        Learn simple and practical ways to manage your money,
+        control your spending, and build better financial habits.
+    </p>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/-xdDTCQObGo"
+            title="Budgeting Tips"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</section>
+```
 
 </body>
 </html>
